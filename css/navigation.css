@@ -1,0 +1,81 @@
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 9vh;
+    background-color: #727272;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+    
+}
+
+.logo{
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 7px;
+    font-size: 20px;
+}
+
+.navi-links{
+    display: flex;
+    width:20%;
+    justify-content: space-around;
+}
+
+.navi-links a{
+    color: white;
+    text-decoration: none;
+    letter-spacing: 3px;
+    font-weight: bold;
+    font-size: 18px;
+    padding: 23px 11px;
+    text-transform: uppercase;
+}
+.navi-links a:hover{
+    background-color:black;
+    color: white;
+    transition: 0.5s ease-in;
+}
+.navi-links li{
+    list-style: none;
+}
+.burger-menu{
+    display: none;
+    cursor: pointer;
+}
+.burger-menu div{
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 5px;
+    transition: all 0.3s ease;
+}
+
+.nav-active{
+    transform: translateX(0%);
+}
+
+@keyframes navi-fade {
+    from{
+        opacity: 0;
+        transform:translateX(50px);
+    }
+    to{
+        opacity:1;
+        transform:translateX(0px);
+    }
+}
+.toggle .line1{
+    transform: rotate(-45deg) translate(-5px,6px);
+}
+.toggle .line2{
+    opacity: 0;
+}
+.toggle .line3{
+    transform: rotate(45deg) translate(-5px,-6px);
+}

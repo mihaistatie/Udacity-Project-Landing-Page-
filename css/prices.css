@@ -1,0 +1,41 @@
+.cards-list {
+  z-index: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: 200px;
+  }
+.card-price {
+    margin: 30px auto!important;
+    width: 300px;
+    height: 300px;
+    border-radius: 40px;
+    box-shadow: 5px 5px 30px 7px rgba(0, 0, 0, 0), -5px -5px 30px 7px rgba(0,0,0,0.22);
+    cursor: pointer;
+    transition: 0.4s;
+    }
+    
+    .titleCust p {
+      text-align: center;
+      font-size: 1.5rem;
+      font-weight: 500;
+      background-color:#727272;
+      color:white;
+      padding: 20px 40px;
+      margin: 0;
+      border-top-right-radius: 40px;
+      border-top-left-radius: 40px;
+    }
+    
+    .bodyCustomize p {
+      padding: 20px 15px;
+      font-size: 20px;
+      text-align: center;
+    }
+    
+    .card-price:hover {
+    transform: scale(0.9, 0.9);
+    box-shadow:5px 5px 30px 7px rgba(0, 0, 0, 0), -5px -5px 30px 7px rgba(0,0,0,0.1)
+    }
+    
